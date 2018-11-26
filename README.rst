@@ -198,5 +198,21 @@ Makes the screen blink by switching it off and on.
 kana_prt(x, y, "KATAKANA_MSG"
 +++++++++++++++++++++++
 
-Prints the KATAKANA text given by **KATAKAN_MSG** at the row x and column y. The screen is divided into 10 columns and 4 rows.
+Prints the KATAKANA text given by **KATAKANA_MSG** at the row x and column y. The screen is divided into 10 columns and 4 rows.
+Required library modules : ssd1306.py ssd1306_px.py kana1.py kana2.py (If you don't print alphabets, don't need ssd1306_text.py.)  
+Please refer kana_help.txt in Japanese HELP.
+
+.. code-block:: python
+
+from microbit import *
+from ssd1306 import draw_screen, clear_oled, initialize
+from ssd1306_text import add_text
+from kana1 import kana_prt
+initialize
+clear_oled()
+kana_prt(0, 0, "アイウエオカキクケコ")
+kana_prt(0, 1, "サシスセソタチツテト")
+kana_prt(0, 2, "ナニヌネノハヒフヘホ")
+add_text(0, 3, "ABCDEFGHIJKL")
+draw_screen()
 
