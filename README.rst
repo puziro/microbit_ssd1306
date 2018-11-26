@@ -194,3 +194,8 @@ Makes the screen blink by switching it off and on.
    clear_oled()
    show_bitmap("microbit_logo")
    blink()
+   
+kana_prt(x, y, "ƒeƒXƒg"
++++++++++++++++++++++++
+
+
