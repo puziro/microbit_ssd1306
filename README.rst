@@ -195,7 +195,8 @@ Makes the screen blink by switching it off and on.
    show_bitmap("microbit_logo")
    blink()
    
-kana_prt(x, y, "ƒeƒXƒg"
+kana_prt(x, y, "KATAKANA_MSG"
 +++++++++++++++++++++++
 
+Prints the KATAKANA text given by **KATAKAN_MSG** at the row x and column y. The screen is divided into 10 columns and 4 rows.
 
