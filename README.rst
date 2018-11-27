@@ -204,15 +204,16 @@ Please refer kana_help.txt in Japanese HELP.
 
 .. code-block:: python
 
-from microbit import *
-from ssd1306 import draw_screen, clear_oled, initialize
-from ssd1306_text import add_text
-from kana1 import kana_prt
-initialize
-clear_oled()
-kana_prt(0, 0, "アイウエオカキクケコ")
-kana_prt(0, 1, "サシスセソタチツテト")
-kana_prt(0, 2, "ナニヌネノハヒフヘホ")
-add_text(0, 3, "ABCDEFGHIJKL")
-draw_screen()
+   from microbit import *
+   from ssd1306 import draw_screen, clear_oled, initialize
+   from ssd1306_text import add_text
+   from kana1 import kana_prt
+   initialize
+   clear_oled()
+   kana_prt(0, 0, "アイウエオカキクケコ")
+   kana_prt(0, 1, "サシスセソタチツテト")
+   kana_prt(0, 2, "ナニヌネノハヒフヘホ")
+   add_text(0, 3, "ABCDEFGHIJKL")
+   draw_screen()
+   
 
