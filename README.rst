@@ -209,7 +209,9 @@ Please refer kana_help.txt in Japanese HELP.
    from ssd1306_text import add_text
    from kana1 import kana_prt
    initialize
+   # 以下の1行必ず入れてください
    draw_screen()
+　 # Micro:bitの電源On後の画面クリアー用
    clear_oled()
    kana_prt(0, 0, "アイウエオカキクケコ")
    kana_prt(0, 1, "サシスセソタチツテト")
