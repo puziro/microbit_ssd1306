@@ -3,7 +3,7 @@ Basic micropython library to control the OLED SSD1306 128x64 I2C with a micro:bi
 
 This library allows the micro:bit to control the typical low cost 0,96" OLED display sold in Amazon and eBay connected to the default I2C pins of the micro:bit. Some sort of breakout is required. Note that the Kitronik breakout does not have pre-soldered the I2C pins and you will need to attach some headers to access the I2C pins.
 
-You should connect the deviceâ€™s SCL pin to micro:bit pin 19, and the deviceâ€™s SDA pin to micro:bit pin 20. You also must connect the deviceâ€™s ground to the micro:bit ground (pin GND). 
+You should connect the deviceçª¶å†± SCL pin to micro:bit pin 19, and the deviceçª¶å†± SDA pin to micro:bit pin 20. You also must connect the deviceçª¶å†± ground to the micro:bit ground (pin GND). 
 
 Due to the low memory of the micro:bit, all functions except for show_bitmap, work in zoom mode, so the effective screen resolution is 64x32 dots of 4x4 pixels of size.
 
@@ -209,10 +209,11 @@ Please refer kana_help.txt in Japanese HELP.
    from ssd1306_text import add_text
    from kana1 import kana_prt
    initialize
+   draw_screen()
    clear_oled()
-   kana_prt(0, 0, "ƒAƒCƒEƒGƒIƒJƒLƒNƒPƒR")
-   kana_prt(0, 1, "ƒTƒVƒXƒZƒ\ƒ^ƒ`ƒcƒeƒg")
-   kana_prt(0, 2, "ƒiƒjƒkƒlƒmƒnƒqƒtƒwƒz")
+   kana_prt(0, 0, "ã‚¢ã‚¤ã‚¦ã‚¨ã‚ªã‚«ã‚­ã‚¯ã‚±ã‚³")
+   kana_prt(0, 1, "ã‚µã‚·ã‚¹ã‚»ã‚½ã‚¿ãƒãƒ„ãƒ†ãƒˆ")
+   kana_prt(0, 2, "ãƒŠãƒ‹ãƒŒãƒãƒãƒãƒ’ãƒ•ãƒ˜ãƒ›")
    add_text(0, 3, "ABCDEFGHIJKL")
    draw_screen()
    
